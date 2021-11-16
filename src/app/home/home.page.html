@@ -7,6 +7,124 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="iodn-padding">
+
+
+    <h4>Entrada de dados - floating, fixed e stacked</h4>
+    <ion-item>
+        <ion-label>Seu nome:</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <h4>Entrada de dados - value, placeholder e clearinput</h4>
+
+    <ion-item>
+        <ion-input clearInput placeholder="Digite seu nome"></ion-input>
+    </ion-item>
+
+    <h4>Tipos de entrada de dados - text, number, password, email, tel url, search</h4>
+    <ion-item>
+        <ion-label>Dados de entrada </ion-label>
+        <ion-input type="number"></ion-input>
+    </ion-item>
+    <h4>Listagem</h4>
+    <ion-list>
+        <ion-item>
+            <ion-label>Lista 1</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Lista 2</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <h4>Lista com Avatar</h4>
+    <ion-list>
+        <ion-item>
+            <ion-avatar slot="start">
+                <ion-img src="https://source.unsplash.com/random/200x200"></ion-img>
+            </ion-avatar>
+            <ion-label>Item 01</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-avatar slot="start">
+                <ion-img src="https://source.unsplash.com/random/100x100"></ion-img>
+            </ion-avatar>
+            <ion-label>Item 02</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <h4>Lista com slide</h4>
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item>
+                <ion-label>Nome 01</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <ion-item-option color="success">
+                    <ion-icon name="create"></ion-icon>
+                    Alterar
+                </ion-item-option>
+                <ion-item-option color="danger">
+                    <ion-icon name="trash"></ion-icon>
+                    Excluir
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
+
+            <ion-item>
+                <ion-label>Nome 02</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <ion-item-option color="success">
+                    <ion-icon name="create"></ion-icon>
+                    Alterar
+                </ion-item-option>
+                <ion-item-option color="danger">
+                    <ion-icon name="trash"></ion-icon>
+                    Excluir
+                </ion-item-option>
+            </ion-item-options>
+
+        </ion-item-sliding>
+
+    </ion-list>
+
+    <h4>Cartão com listagem de itens</h4>
+    <ion-card>
+        <ion-item href="https://lginfo.bempertinho.com.br/" target="_blank">
+            <ion-icon slot="start" name="arrow-redo-outline"></ion-icon>
+            <ion-label>Site lginfo</ion-label>
+        </ion-item>
+        <ion-item href="https://google.com" target="_blank">
+            <ion-icon slot="start" name="arrow-redo-outline"></ion-icon>
+            <ion-label>Site Google</ion-label>
+        </ion-item>
+    </ion-card>
+    <h4>Card com cabeçalho</h4>
+    <ion-card>
+
+        <ion-card-header>
+            <ion-card-title>
+                Titulo do card
+            </ion-card-title>
+            <ion-img src="https://source.unsplash.com/random/350x450"></ion-img>
+            <ion-card-subtitle>
+                Subtítulo do card
+            </ion-card-subtitle>
+            <p>Texto do card aqui para ilustrar</p>
+        </ion-card-header>
+    </ion-card>
+    <h4>Cartões</h4>
+    <ion-card color="primary" mode="android">
+        <ion-img src="https://source.unsplash.com/random/350x450"></ion-img>
+        <ion-card-content>
+            <ion-card-title>Título do card</ion-card-title>
+            <p>Texto do card, exemplo de conteúdo</p>
+        </ion-card-content>
+    </ion-card>
+
+
+
     <h1>Botões</h1>
     <ion-button>Padrão</ion-button>
     <ion-button href="https://lginfo.com.br/" target="_blank">Link</ion-button>
