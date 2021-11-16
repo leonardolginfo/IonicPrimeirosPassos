@@ -6,7 +6,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="iodn-padding">
     <h1>Botões</h1>
     <ion-button>Padrão</ion-button>
     <ion-button href="https://lginfo.com.br/" target="_blank">Link</ion-button>
@@ -20,13 +20,38 @@
     <ion-button color="medium">Medium</ion-button>
     <ion-button color="dark">Dark</ion-button>
 
+    <h4>Ícones</h4>
+
+    <ion-button>
+        <ion-icon slot="start" name="logo-ionic"></ion-icon>
+        Início
+    </ion-button>
+
+    <ion-button>
+        <ion-icon slot="end" name="logo-linkedin"></ion-icon>
+        Fim
+    </ion-button>
+
+    <ion-button>
+
+        <ion-icon slot="icon-only" name="logo-google-playstore"></ion-icon>
+
+    </ion-button>
+
     <h4>Arredondado</h4>
+
     <ion-button shape="round" color="primary">Arredondado</ion-button>
 
-    <h4>Preenchimento</h4>
-    <ion-button fill="outline" color="tertiary" expand=>Preenchimento</ion-button>
-
     <h4>Expandido</h4>
-    <ion-button expand="full" color="dark">Expandido</ion-button>
     <ion-button expand="block" color="dark">Expandido block</ion-button>
+    <ion-button expand="full" color="dark">Expandido</ion-button>
+
+    <h4>Preenchimento</h4>
+    <ion-button fill="outline" color="tertiary " expand="full">Preenchimento</ion-button>
+
+    <h4>Tamanhos de botões</h4>
+    <ion-button size="small" fill="outline" color="tertiary">Pequeno</ion-button>
+    <ion-button fill="outline" color="tertiary">Padrão</ion-button>
+    <ion-button size="large" fill="outline" color="tertiary">Grande</ion-button>
+
 </ion-content>
